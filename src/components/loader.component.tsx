@@ -3,6 +3,7 @@ type LoaderProps = {
 };
 
 const Loader = ({ color }: LoaderProps) => {
+  
   let circleCommonClasses = `h-2.5 w-2.5 ${color} rounded-full`;
 
   return (

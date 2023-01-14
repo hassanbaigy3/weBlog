@@ -1,16 +1,17 @@
 import { useState, ChangeEvent, useEffect } from "react";
-import { RootState } from "../redux/store";
 
+import { RootState } from "../redux/store";
 import { useDispatch, useSelector } from "react-redux";
 import { setMyBlogs } from "../features/my-blogs.slice";
 import { setAllBlogs } from "../features/all-blogs.slice";
-import ErrorToast from "./error-toast.component";
-
-import { createNewBlog, getMyBlogs, getAllBlogs, updateBlog } from "../utils/firebase.utils";
 
 import Loader from "./loader.component";
-import { EditBlog } from "../utils/types";
 import FormInput from "./form-input.component";
+import ErrorToast from "./error-toast.component";
+
+import { EditBlog } from "../utils/types";
+import { createNewBlog, getMyBlogs, getAllBlogs, updateBlog } from "../utils/firebase.utils";
+
 
 type EditBlogModalProps =
   | {

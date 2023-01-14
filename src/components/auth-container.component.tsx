@@ -1,10 +1,12 @@
-import BackDrop from "../assets/BackdropAuth.jpg";
 import * as React from "react";
 import { Link } from "react-router-dom";
+
+import BackDrop from "../assets/BackdropAuth.jpg";
 
 type AuthContainerProps = React.PropsWithChildren<{
   isLogin?: Boolean;
 }>;
+
 const AuthContainer: React.FC<AuthContainerProps> = ({ isLogin = false, children }) => {
   return (
     <div className="flex flex-row">

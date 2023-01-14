@@ -1,12 +1,12 @@
 import { FC, useState } from "react";
-
 import { useMatch } from "react-router-dom";
+
+import { RootState } from "../redux/store";
+import { useSelector } from "react-redux";
 
 import NavBar from "./navbar.component";
 import Search from "./search.component";
 
-import { RootState } from "../redux/store";
-import { useSelector } from "react-redux";
 
 type BlogsContainerProps = React.PropsWithChildren<{
   isEmpty: Boolean;

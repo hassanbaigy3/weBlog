@@ -6,10 +6,9 @@ import { setCurrentUser } from "../features/current-user.slice";
 import { signInAuthUserWithEmailAndPassword } from "../utils/firebase.utils";
 
 import Loader from "../components/loader.component";
-import ErrorToast from "../components/error-toast.component";
-
-import AuthContainer from "../components/auth-container.component";
 import FormInput from "../components/form-input.component";
+import ErrorToast from "../components/error-toast.component";
+import AuthContainer from "../components/auth-container.component";
 
 const defaultFormFields = {
   email: "",

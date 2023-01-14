@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 
-import Blog from "../../components/blog.component";
-
-import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
+import { useDispatch, useSelector } from "react-redux";
 import { resetMyBlogs, setMyBlogs } from "../../features/my-blogs.slice";
+
+import Blog from "../../components/blog.component";
+import DeleteBlogModal from "../../components/delete-blog.componenet";
+import BlogsContainer from "../../components/blogs-container.component";
+import CreateBlogModal from "../../components/create-blog-modal.component";
 
 import { getMyBlogs } from "../../utils/firebase.utils";
 import { Blog as BlogType, EditBlog } from "../../utils/types";
-import CreateBlogModal from "../../components/create-blog-modal.component";
-import DeleteBlogModal from "../../components/delete-blog.componenet";
-import BlogsContainer from "../../components/blogs-container.component";
 
 const MyBlogs = () => {
   //Local State

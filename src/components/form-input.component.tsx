@@ -1,6 +1,7 @@
 import { InputHTMLAttributes, FC } from "react";
 
 type FormInputProps = InputHTMLAttributes<HTMLInputElement>;
+
 const FormInput: FC<FormInputProps> = (props) => {
   return (
     <input

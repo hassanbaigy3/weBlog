@@ -14,6 +14,7 @@ import {
   where,
   updateDoc,
 } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyChOSmUPjdwsXcmKx60rBdwL3pHyn3oU8c",
   authDomain: "capstone-blogging-db208.firebaseapp.com",
