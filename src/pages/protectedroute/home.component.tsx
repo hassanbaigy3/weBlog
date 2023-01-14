@@ -26,7 +26,7 @@ const Home = () => {
       dispatch(setAllBlogs(fetchedBlogs));
     };
     fetchBlogs();
-  }, []);
+  },);
 
   const filteredBlogs: Array<BlogType> = allGlobalBlogs.allBlogs.filter((blog: BlogType) =>
     blog.title.toLowerCase().includes(searchField)

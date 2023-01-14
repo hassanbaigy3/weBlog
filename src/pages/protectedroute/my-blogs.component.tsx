@@ -37,7 +37,7 @@ const MyBlogs = () => {
       }
     };
     myBlogs();
-  }, []);
+  }, );
 
   const filteredBlogs: Array<BlogType> = myGlobalBlogs.myBlogs.filter((blog: BlogType) =>
     blog.title.toLowerCase().includes(searchField)

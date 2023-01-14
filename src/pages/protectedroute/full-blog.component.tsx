@@ -37,7 +37,7 @@ const FullBlog = () => {
         <div className="h-screen ml-12 md:hidden">
           <div className="font-Serif-Display text-xl cursor-pointer hover:text-primary" onClick={handleBack}>
             Back
-            <img src={ArrowLeft} className=" " />
+            <img src={ArrowLeft} className=" " alt="Left arrow" />
           </div>
         </div>
         <div className="flex flex-col h-screen itmes-center px-20 max-w-7xl sm:px-8">
