@@ -1,15 +1,15 @@
-import { ChangeEvent, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ChangeEvent, useState, useEffect } from "react";
 
 import { useDispatch } from "react-redux";
 import { setCurrentUser } from "../features/current-user.slice";
 
-import ErrorToast from "../components/error-toast.component";
 import Loader from "../components/loader.component";
-import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../utils/firebase.utils";
-
-import AuthContainer from "../components/auth-container.component";
 import FormInput from "../components/form-input.component";
+import ErrorToast from "../components/error-toast.component";
+import AuthContainer from "../components/auth-container.component";
+
+import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../utils/firebase.utils";
 
 const defaultFormFields = {
   displayName: "",

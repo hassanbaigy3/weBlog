@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 
-import Blog from "../../components/blog.component";
-
 import { RootState } from "../../redux/store";
 import { useDispatch, useSelector } from "react-redux";
-
 import { setAllBlogs } from "../../features/all-blogs.slice";
+
+import Blog from "../../components/blog.component";
+import BlogsContainer from "../../components/blogs-container.component";
 
 import { Blog as BlogType } from "../../utils/types";
 import { getAllBlogs } from "../../utils/firebase.utils";
-import BlogsContainer from "../../components/blogs-container.component";
+
 
 const Home = () => {
   //Local State

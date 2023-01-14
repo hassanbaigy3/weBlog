@@ -1,18 +1,20 @@
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../redux/store";
-import { setCurrentUser } from "../features/current-user.slice";
-import { signOutUser } from "../utils/firebase.utils";
 import { useState } from "react";
-import { useNavigate, useMatch } from "react-router-dom";
 
+import { RootState } from "../redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate, useMatch } from "react-router-dom";
 import { setAllBlogs } from "../features/all-blogs.slice";
 import { resetMyBlogs } from "../features/my-blogs.slice";
+import { setCurrentUser } from "../features/current-user.slice";
+
 import CreateBlogModal from "./create-blog-modal.component";
 
 import searchIcon from "../assets/search.svg";
-import createIcon from "../assets/add_circle.svg";
-import signOutIcon from "../assets/signout.svg";
 import homeIcon from "../assets/homeIcon.svg";
+import signOutIcon from "../assets/signout.svg";
+import createIcon from "../assets/add_circle.svg";
+
+import { signOutUser } from "../utils/firebase.utils";
 
 type NavBarProps = {
   onSearchClick: () => void;

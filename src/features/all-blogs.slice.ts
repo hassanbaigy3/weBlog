@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { Blog } from "../utils/types";
 
 type InitialStateType = {

@@ -6,6 +6,7 @@ type SearchProps = {
 //handle isOpen in parent component
 //avoid using any type
 const Search = ({ onChangeHandler, isOpen, onClose }: SearchProps) => {
+  
   if (!isOpen) return null;
   return (
     <div className="flex flex-nowrap flex-row space-x-2  items-center justify-center ">
