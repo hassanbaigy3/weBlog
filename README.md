@@ -13,7 +13,7 @@ To  run this project,
 
 4) Start by "npm start"
 
-This project is deployed on netflify : https://rainbow-centaur-3252f6.netlify.app/
+This project is deployed on netflify : https://capable-naiad-1b1469.netlify.app/
 
 
 ### Screenshots
